@@ -1,3 +1,5 @@
+package Bee.Beginner;
+
 import java.util.Scanner;
 
 public class URI1001 {
