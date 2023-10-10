@@ -1,8 +1,8 @@
 package AulaHeranca.contas;
 
 public class Conta {
-    int numero;
-    double saldo;
+    protected int numero;
+    protected double saldo;
 
     boolean saque(double valor) {
         if(this.saldo > valor) {
@@ -19,6 +19,18 @@ public class Conta {
 
     double getSaldo() {
         return saldo;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
     public Conta(int numero, double saldo) {

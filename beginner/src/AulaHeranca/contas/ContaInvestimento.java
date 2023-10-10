@@ -6,7 +6,7 @@ public class ContaInvestimento extends Conta {
 
     boolean saque(double valor) {
         if(this.saldo > valor) {
-            this.saldo = this.saldo - valor;
+            this.saldo = this.saldo - (valor *0.99);
             return true;
         } else {
         //Diferente de conta
